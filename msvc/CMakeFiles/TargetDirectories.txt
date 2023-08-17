@@ -1,0 +1,10 @@
+N:/Development/Dev_Base/curl-8.2.1/msvc/CMakeFiles/curl_uninstall.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/CMakeFiles/INSTALL.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/CMakeFiles/ALL_BUILD.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/CMakeFiles/ZERO_CHECK.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/lib/CMakeFiles/libcurl.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/lib/CMakeFiles/curlu.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/lib/CMakeFiles/INSTALL.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/src/CMakeFiles/curl.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/src/CMakeFiles/curltool.dir
+N:/Development/Dev_Base/curl-8.2.1/msvc/src/CMakeFiles/INSTALL.dir

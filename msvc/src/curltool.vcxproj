@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F0C4F81-3289-31C4-988D-29C7D686B5E8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>curltool</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">curltool.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">curltool-d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">curltool.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">curltool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">curltool.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">curltool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">curltool.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">curltool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_DEBUG;_WINDOWS;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\include;N:\Development\Dev_Base\curl-8.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\curl-8.2.1\msvc\CMakeFiles\a0566dd7920bad86b8b4db877da7797b\tool_hugehelp.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "#include \"tool_hugehelp.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "#include \"tool_hugehelp.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "#include \"tool_hugehelp.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating tool_hugehelp.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "#include \"tool_hugehelp.h\"" &gt; tool_hugehelp.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\src\tool_hugehelp.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\tool_hugehelp.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\curl-8.2.1\src\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\src\Makefile.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\slist_wc.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_binmode.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_bname.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_dbg.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_hdr.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_prg.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_rea.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_see.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_wrt.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cfgable.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_dirhie.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_doswin.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_easysrc.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_filetime.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_findfile.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_formparse.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_getparam.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_getpass.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_help.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_helpers.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\msvc\src\tool_hugehelp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_libinfo.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_listhelp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_main.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_msgs.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_operate.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_operhlp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_paramhlp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_parsecfg.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_progress.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_stderr.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_strdup.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_setopt.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_sleep.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_urlglob.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_util.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_vms.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_writeout.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_writeout_json.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_xattr.c" />
+    <ResourceCompile Include="N:\Development\Dev_Base\curl-8.2.1\src\curl.rc" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\strtoofft.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\timediff.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\nonblock.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\warnless.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_multibyte.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\version_win32.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\dynbuf.c" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\slist_wc.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_binmode.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_bname.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_dbg.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_hdr.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_prg.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_rea.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_see.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cb_wrt.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_cfgable.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_dirhie.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_doswin.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_easysrc.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_filetime.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_findfile.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_formparse.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_getparam.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_getpass.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_help.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_helpers.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_hugehelp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_libinfo.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_main.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_msgs.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_operate.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_operhlp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_paramhlp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_parsecfg.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_progress.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_sdecls.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_setopt.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_setup.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_sleep.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_stderr.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_strdup.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_urlglob.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_util.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_version.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_vms.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_writeout.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_writeout_json.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\src\tool_xattr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-8.2.1\msvc\ZERO_CHECK.vcxproj">
+      <Project>{563EFBCC-1EC0-3F24-AC71-AEDB1F719FC3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

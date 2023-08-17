@@ -1,0 +1,63 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakePushCheckState.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindCygwin.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindOpenSSL.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPerl.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Internal/CheckSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/WriteBasicConfigVersionFile.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/CurlSymbolHiding.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/CurlTests.c
+N:/Development/Dev_Base/curl-8.2.1/CMake/FindCARES.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/FindLibPSL.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/FindLibSSH2.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/FindNGHTTP2.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/Macros.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/OtherTests.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/PickyWarnings.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/Platforms/WindowsCache.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/Utilities.cmake
+N:/Development/Dev_Base/curl-8.2.1/CMake/cmake_uninstall.cmake.in
+N:/Development/Dev_Base/curl-8.2.1/CMake/curl-config.cmake.in
+N:/Development/Dev_Base/curl-8.2.1/CMakeLists.txt
+N:/Development/Dev_Base/curl-8.2.1/curl-config.in
+N:/Development/Dev_Base/curl-8.2.1/libcurl.pc.in
+N:/Development/Dev_Base/curl-8.2.1/msvc/CMakeFiles/3.20.0/CMakeCCompiler.cmake
+N:/Development/Dev_Base/curl-8.2.1/msvc/CMakeFiles/3.20.0/CMakeRCCompiler.cmake
+N:/Development/Dev_Base/curl-8.2.1/msvc/CMakeFiles/3.20.0/CMakeSystem.cmake

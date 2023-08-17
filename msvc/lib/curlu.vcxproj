@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B51E451-076B-311B-92E0-480B1C57DFD9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>curlu</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">curlu.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">curlu-d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">curlu.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">curlu</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">curlu.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">curlu</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">curlu.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">curlu</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_DEBUG;_WINDOWS;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;UNITTESTS;CURL_STATICLIB;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_LIBCURL;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>N:\Development\Dev_Base\curl-8.2.1\include;N:\Development\Dev_Base\nghttp2-1.39.1\src\includes;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib\..\include;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\..;N:\Development\Dev_Base\curl-8.2.1\lib;N:\Development\Dev_Base\curl-8.2.1\msvc\lib;N:\Development\Dev_Base\c-ares-1.10.0;N:\Development\Dev_Base\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\curl-8.2.1\lib\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.inc;N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.soname;N:\Development\Dev_Base\curl-8.2.1\lib\curl_config.h.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.soname.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.inc;N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.soname;N:\Development\Dev_Base\curl-8.2.1\lib\curl_config.h.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.soname.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.inc;N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.soname;N:\Development\Dev_Base\curl-8.2.1\lib\curl_config.h.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.soname.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule N:/Development/Dev_Base/curl-8.2.1/lib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/curl-8.2.1 -BN:/Development/Dev_Base/curl-8.2.1/msvc --check-stamp-file N:/Development/Dev_Base/curl-8.2.1/msvc/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.inc;N:\Development\Dev_Base\curl-8.2.1\lib\Makefile.soname;N:\Development\Dev_Base\curl-8.2.1\lib\curl_config.h.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.inc.cmake;N:\Development\Dev_Base\curl-8.2.1\msvc\lib\Makefile.soname.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\curl-8.2.1\msvc\lib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\altsvc.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\amigaos.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\arpa_telnet.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\asyn.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\bufq.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\bufref.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\c-hyper.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-h1-proxy.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-h2-proxy.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-haproxy.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-https-connect.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-socket.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\cfilters.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\conncache.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\connect.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\content_encoding.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\cookie.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_addrinfo.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_base64.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_ctype.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_des.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_endian.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_fnmatch.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_get_line.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_gethostname.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_gssapi.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_hmac.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_krb5.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_ldap.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_log.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_md4.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_md5.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_memory.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_memrchr.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_multibyte.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_ntlm_core.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_ntlm_wb.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_path.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_printf.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_range.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_rtmp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_sasl.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_setup.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_setup_once.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_sha256.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_sspi.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_threads.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\curlx.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\dict.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\doh.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\dynbuf.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\dynhds.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\easy_lock.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\easyif.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\easyoptions.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\escape.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\file.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\fileinfo.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\fopen.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\formdata.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\functypes.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\ftp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\ftplistparser.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\getinfo.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\gopher.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\hash.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\headers.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\hostip.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\hsts.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http1.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http2.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_chunks.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_digest.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_negotiate.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_ntlm.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_proxy.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_aws_sigv4.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\idn.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\if2ip.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\imap.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\inet_ntop.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\inet_pton.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\llist.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\macos.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\memdebug.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\mime.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\mqtt.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\multihandle.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\multiif.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\netrc.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\nonblock.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\noproxy.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\parsedate.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\pingpong.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\pop3.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\progress.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\psl.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\rand.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\rename.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\rtsp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\select.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\sendf.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\setopt.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\setup-vms.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\share.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\sigpipe.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\slist.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\smb.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\smtp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\sockaddr.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\socketpair.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\socks.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\speedcheck.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\splay.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\strcase.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\strdup.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\strerror.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\strtok.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\strtoofft.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\system_win32.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\telnet.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\tftp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\timediff.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\timeval.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\transfer.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\url.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\urlapi-int.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\urldata.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\version_win32.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\warnless.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\ws.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\digest.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\ntlm.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\vauth.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\bearssl.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\gskit.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\gtls.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\hostcheck.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\keylog.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\mbedtls.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\mbedtls_threadlock.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\nssg.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\openssl.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\rustls.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\schannel.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\schannel_int.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\sectransp.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\vtls.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\vtls_int.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\wolfssl.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\x509asn1.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\curl_msh3.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\curl_ngtcp2.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\curl_quiche.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\vquic.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\vquic_int.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\lib\vssh\ssh.h" />
+    <ClInclude Include="N:\Development\Dev_Base\curl-8.2.1\msvc\lib\curl_config.h" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\altsvc.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\amigaos.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\asyn-ares.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\asyn-thread.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\base64.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\bufq.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\bufref.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\c-hyper.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-h1-proxy.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-h2-proxy.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-haproxy.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-https-connect.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\cf-socket.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\cfilters.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\conncache.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\connect.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\content_encoding.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\cookie.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_addrinfo.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_des.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_endian.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_fnmatch.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_get_line.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_gethostname.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_gssapi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_log.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_memrchr.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_multibyte.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_ntlm_core.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_ntlm_wb.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_path.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_range.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_rtmp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_sasl.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_sspi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\curl_threads.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\dict.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\doh.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\dynbuf.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\dynhds.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\easy.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\easygetopt.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\easyoptions.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\escape.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\file.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\fileinfo.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\fopen.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\formdata.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\ftp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\ftplistparser.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\getenv.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\getinfo.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\gopher.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hash.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\headers.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hmac.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hostasyn.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hostip.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hostip4.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hostip6.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hostsyn.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\hsts.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http1.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http2.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_chunks.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_digest.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_negotiate.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_ntlm.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_proxy.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\http_aws_sigv4.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\idn.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\if2ip.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\imap.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\inet_ntop.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\inet_pton.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\krb5.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\ldap.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\llist.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\macos.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\md4.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\md5.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\memdebug.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\mime.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\mprintf.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\mqtt.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\multi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\netrc.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\nonblock.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\noproxy.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\openldap.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\parsedate.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\pingpong.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\pop3.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\progress.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\psl.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\rand.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\rename.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\rtsp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\select.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\sendf.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\setopt.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\sha256.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\share.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\slist.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\smb.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\smtp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\socketpair.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\socks.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\socks_gssapi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\socks_sspi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\speedcheck.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\splay.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\strcase.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\strdup.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\strerror.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\strtok.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\strtoofft.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\system_win32.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\telnet.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\tftp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\timediff.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\timeval.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\transfer.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\url.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\urlapi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\version.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\version_win32.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\warnless.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\ws.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\cleartext.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\cram.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\digest.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\digest_sspi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\gsasl.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\krb5_gssapi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\krb5_sspi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\ntlm.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\ntlm_sspi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\oauth2.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\spnego_gssapi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\spnego_sspi.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vauth\vauth.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\bearssl.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\gskit.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\gtls.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\hostcheck.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\keylog.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\mbedtls.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\mbedtls_threadlock.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\nss.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\openssl.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\rustls.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\schannel.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\schannel_verify.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\sectransp.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\vtls.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\wolfssl.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vtls\x509asn1.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\curl_msh3.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\curl_ngtcp2.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\curl_quiche.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vquic\vquic.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vssh\libssh.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vssh\libssh2.c" />
+    <ClCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\vssh\wolfssh.c" />
+    <ResourceCompile Include="N:\Development\Dev_Base\curl-8.2.1\lib\libcurl.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N:\Development\Dev_Base\curl-8.2.1\msvc\ZERO_CHECK.vcxproj">
+      <Project>{563EFBCC-1EC0-3F24-AC71-AEDB1F719FC3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
