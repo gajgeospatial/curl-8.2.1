@@ -272,9 +272,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\CMakeFiles\a0566dd7920bad86b8b4db877da7797b\tool_hugehelp.c.rule" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="..\..\src\curl.rc">
       <Filter>curl source files</Filter>
     </ResourceCompile>
